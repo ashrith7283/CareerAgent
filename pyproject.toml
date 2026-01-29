@@ -1,0 +1,13 @@
+[project]
+name = "careeragents"
+version = "0.1.0"
+description = "An AI career assistant that answers questions about your background and captures leads"
+readme = "README.md"
+requires-python = ">=3.12"
+dependencies = [
+    "gradio>=5.22.0",
+    "openai>=1.68.2",
+    "pypdf>=5.4.0",
+    "python-dotenv>=1.0.1",
+    "requests>=2.32.3",
+]

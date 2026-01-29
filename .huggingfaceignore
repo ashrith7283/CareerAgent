@@ -1,0 +1,29 @@
+# Virtual environment (Spaces installs from requirements.txt)
+.venv/
+venv/
+env/
+
+# Lock file – use requirements.txt on Spaces
+uv.lock
+
+# Secrets – set OPENAI_API_KEY etc. in Space settings, not in repo
+.env
+.env.*
+
+# Git and OS cruft
+.git/
+.gitignore
+.DS_Store
+
+# Python cache
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+.mypy_cache/
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
