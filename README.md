@@ -116,15 +116,18 @@ CareerAgent/
 ├── app.py              # Gradio app, OpenAI client, tools, and agent logic
 ├── assets/
 │   ├── Ashrith_Resume.pdf   # Resume PDF (replace with your own)
-│   └── summary.txt          # Short career summary (replace with your own)
+│   ├── summary.txt          # Enhanced career summary
+│   ├── achievements.txt     # Key achievements
+│   ├── skills.txt           # Detailed skills breakdown
+│   └── preferences.txt      # Career preferences
 ├── .env                 # API keys and optional Pushover config (do not commit)
 ├── pyproject.toml       # Project metadata and dependencies
 ├── requirements.txt    # Pip-installable dependencies
 └── README.md           # This file
 ```
 
-**Customization:**  
-- Put your resume PDF and `summary.txt` in `assets/`.  
+**Customization:**
+- Put your resume PDF in `assets/` and update `assets/summary.txt`, `assets/achievements.txt`, `assets/skills.txt`, and `assets/preferences.txt` with your own information.
 - In `app.py`, update the `Me` class (e.g. `self.name`, file paths) to match your name and files.
 
 ---

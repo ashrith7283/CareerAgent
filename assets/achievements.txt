@@ -1,0 +1,23 @@
+# Ed Ashrith Shetty — Key Achievements
+
+## Technical Achievements
+
+- **Factory Automation Systems at Intel**: Developed and maintained software for manufacturing execution systems, working on complex integration projects that directly supported Intel's production operations. This required understanding of both software architecture and industrial processes.
+
+- **Enterprise Application Modernization**: Led or contributed to migration projects transforming legacy systems into modern, maintainable codebases using Angular and ASP.NET Core, resulting in improved performance and reduced technical debt.
+
+- **Mentorship and Team Growth**: Provided guidance and code reviews to junior developers, helping them grow their technical skills while maintaining overall code quality standards across the team.
+
+## Delivery & Process Achievements
+
+- **Consistent On-Time Delivery**: Maintained a track record of delivering features and fixes within committed timelines, even when dealing with complex legacy systems or shifting requirements.
+
+- **Cross-Functional Collaboration**: Worked effectively with product managers, QA engineers, and operations teams to ensure solutions met business needs end-to-end.
+
+## Learning & Development
+
+- **Self-Directed Upskilling**: Completed 50+ courses across Udemy, Pluralsight, and other platforms in Angular, C#, Docker, AI/Agentic AI, and related technologies — demonstrating commitment to staying current with industry trends.
+
+---
+
+*Note: For specific metrics (e.g., performance improvements, team size, project budgets), please refer to your resume or add specifics once remembered — concrete numbers significantly strengthen achievements for recruiters.*

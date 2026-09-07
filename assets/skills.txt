@@ -1,0 +1,55 @@
+# Ed Ashrith Shetty — Skills Deep Dive
+
+## Programming Languages
+
+| Skill | Proficiency | Notes |
+|-------|-------------|-------|
+| C# / .NET | Expert | Primary backend language, extensive production experience |
+| JavaScript/TypeScript | Proficient | For Angular frontend development |
+| Python | Familiar | Currently learning AI/Agentic AI applications |
+| SQL | Proficient | Complex queries, stored procedures, optimization |
+
+## Frontend Development
+
+- **Angular** (Primary): Component architecture, services, RxJS observables, Angular Material, routing, forms, HTTP client
+- **HTML5 / CSS3**: Responsive layouts, cross-browser compatibility
+- **State Management**: Understanding of application state patterns
+
+## Backend Development
+
+- **ASP.NET Core / ASP.NET MVC**: Web APIs, RESTful services, middleware, authentication/authorization
+- **Entity Framework / ADO.NET**: Database access patterns, ORM optimization
+- **Microservices**: API gateway patterns, service-to-service communication
+
+## Databases
+
+- **SQL Server**: Strong experience with queries, stored procedures, indexes, performance tuning
+- **Oracle**: PL/SQL, data modeling, integration with .NET applications
+- **Database Design**: Normalization, indexing strategies, query optimization
+
+## DevOps & Tools
+
+- **Docker**: Containerization of applications, Docker Compose for local development
+- **CI/CD**: Pipeline setup and maintenance (specific tools depend on your environment)
+- **Git**: Version control, branching strategies, code reviews
+- **Azure DevOps / Jenkins**: Build and deployment automation
+
+## AI & Emerging Tech
+
+- **Agentic AI**: Currently upskilling — building agents that can reason, plan, and use tools autonomously
+- **AI Integration**: Understanding of LLM APIs, prompt engineering concepts
+
+## Soft Skills
+
+- **Technical Communication**: Explaining complex topics to varied audiences
+- **Code Review**: Providing constructive feedback that improves code quality
+- **Mentoring**: Guiding junior developers, sharing knowledge
+- **Problem Solving**: Breaking down complex issues into manageable components
+- **Collaboration**: Cross-functional team experience
+
+## Methodologies
+
+- Agile/Scrum
+- Test-Driven Development (awareness)
+- SOLID principles
+- Clean architecture patterns
