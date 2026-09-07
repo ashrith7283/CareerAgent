@@ -122,6 +122,10 @@ If the user is engaging in discussion, try to steer them towards getting in touc
         return system_prompt
     
     def chat(self, message, history):
+        # First message greeting
+        if not history:
+            return f"👋 Hi! I'm Ed Ashrith Shetty's Career Agent. I'm here to answer any questions about my background, skills, experience, and what I'm looking for in my next role. Feel free to ask me anything — I'm happy to chat!"
+
         # Convert Gradio chat history (list of [user, assistant] pairs)
         # into OpenAI chat message format.
         messages = [{"role": "system", "content": self.system_prompt()}]
