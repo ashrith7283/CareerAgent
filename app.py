@@ -122,9 +122,13 @@ If the user is engaging in discussion, try to steer them towards getting in touc
         return system_prompt
     
     def chat(self, message, history):
-        # First message greeting
+        # First message greeting - notify that someone started a conversation
         if not history:
+            push(f"🔔 New visitor started a conversation!")
             return f"👋 Hi! I'm Ed Ashrith Shetty's Career Agent. I'm here to answer any questions about my background, skills, experience, and what I'm looking for in my next role. Feel free to ask me anything — I'm happy to chat!"
+
+        # Notify on each subsequent message
+        push(f"🔔 New message: {message[:100]}{'...' if len(message) > 100 else ''}")
 
         # Convert Gradio chat history (list of [user, assistant] pairs)
         # into OpenAI chat message format.
