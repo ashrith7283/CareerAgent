@@ -7,7 +7,7 @@ from pypdf import PdfReader
 import gradio as gr
 
 
-load_dotenv(override=True)
+load_dotenv()  # Load .env for local dev; ignored on Render where env vars are set in dashboard
 
 def push(text):
     requests.post(
@@ -166,4 +166,7 @@ if __name__ == "__main__":
     else:
         # Local dev, Render, or other cloud platforms
         port = int(os.environ.get("PORT", 7860))
-        gr.ChatInterface(me.chat).launch(server_port=port, server_host="0.0.0.0", share=True)
+        app = gr.ChatInterface(me.chat)
+        # Add health check endpoint for Render
+        app.app.add_route("/health", lambda: "OK", methods=["GET"])
+        app.launch(server_port=port, server_host="0.0.0.0", share=True)
