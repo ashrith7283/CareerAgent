@@ -10,14 +10,19 @@ import gradio as gr
 load_dotenv()  # Load .env for local dev; ignored on Render where env vars are set in dashboard
 
 def push(text):
-    requests.post(
-        "https://api.pushover.net/1/messages.json",
-        data={
-            "token": os.getenv("PUSHOVER_TOKEN"),
-            "user": os.getenv("PUSHOVER_USER"),
-            "message": text,
-        }
-    )
+    token = os.getenv("PUSHOVER_TOKEN")
+    user = os.getenv("PUSHOVER_USER")
+    if not token or not user:
+        print("Pushover not configured (PUSHOVER_TOKEN or PUSHOVER_USER missing)", flush=True)
+        return
+    try:
+        requests.post(
+            "https://api.pushover.net/1/messages.json",
+            data={"token": token, "user": user, "message": text},
+            timeout=10,
+        )
+    except Exception as e:
+        print(f"Pushover error: {e}", flush=True)
 
 
 def record_user_details(email, name="Name not provided", notes="not provided"):
