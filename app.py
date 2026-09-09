@@ -169,4 +169,4 @@ if __name__ == "__main__":
         app = gr.ChatInterface(me.chat)
         # Add health check endpoint for Render
         app.app.add_route("/health", lambda: "OK", methods=["GET"])
-        app.launch(server_port=port, server_host="0.0.0.0", share=True)
+        app.launch(server_port=port, server_name="0.0.0.0", share=True)
