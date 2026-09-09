@@ -158,4 +158,12 @@ If the user is engaging in discussion, try to steer them towards getting in touc
 
 if __name__ == "__main__":
     me = Me()
-    gr.ChatInterface(me.chat).launch(share=True)  # Creates temporary public link
+    # Determine hosting environment
+    is_hf_space = os.environ.get("SPACE_ID") is not None
+
+    if is_hf_space:
+        gr.ChatInterface(me.chat).launch()  # HF Spaces handles hosting
+    else:
+        # Local dev, Render, or other cloud platforms
+        port = int(os.environ.get("PORT", 7860))
+        gr.ChatInterface(me.chat).launch(server_port=port, server_host="0.0.0.0", share=True)

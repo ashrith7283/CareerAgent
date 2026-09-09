@@ -1,0 +1,16 @@
+services:
+  - type: web
+    name: career-agent
+    runtime: docker
+    plan: free
+    dockerfilePath: ./Dockerfile
+    healthCheckPath: /
+    regions:
+      - oregon
+    envVars:
+      - key: OPENAI_API_KEY
+        sync: false
+      - key: PUSHOVER_TOKEN
+        sync: false
+      - key: PUSHOVER_USER
+        sync: false
